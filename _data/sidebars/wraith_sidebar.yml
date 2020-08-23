@@ -1,0 +1,40 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+
+entries:
+- title: Sidebar
+  product: Wraith
+  version: 0.0.4 # This matches the current version of the tool
+  folders:
+
+  - title: Quickstart
+    output: web #, pdf
+    folderitems:
+
+    - title: Overview
+      url: /wraith_intro.html
+      output: web
+
+    - title: Installation
+      url: /wraith_install.html
+      output: web, pdf
+
+    - title: Usage
+      url: /wraith_usage.html
+      output: web #, pdf
+
+  - title: FAQ
+    output: web #, pdf
+    folderitems:
+  
+    - title: FAQ
+      url: /wraith_faq.html
+      output: web #, pdf
+
+  - title: Contributing
+    output: web #, pdf
+    folderitems:
+
+    - title: Contributing
+      url: /wraith_contrib.html
+      output: web #, pdf
