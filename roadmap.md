@@ -29,8 +29,8 @@
 - [ ] Layout for anansi pages
 - [ ] Layout for main page
 - [ ] Change the version on the side bar to be bold and pick a better color
-- [ ]
-- [ ]
+- [ ] How do we test the site links
+- [ ] Remove the link icon
 - [ ]
 - [ ]
 
