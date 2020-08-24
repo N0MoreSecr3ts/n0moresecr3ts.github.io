@@ -5,9 +5,19 @@ summary: "Code of Conduct"
 sidebar: wraith_signatures_sidebar
 permalink: wraith_signatures_coc.html
 folder: wraith_signatures
+toc: true
 ---
 
-# Code of Conduct
+<!-- <p align="center" >
+  <p>&nbsp;</p>
+  <a href="#our-pledge">Our Pledge</a> •
+  <a href="#scope">Scope</a> •
+  <a href="#enforcement">Enforcement</a> •
+  <a href="#attribution">Attribution</a> 
+  <p>&nbsp;</p>
+</p> -->
+
+<p>&nbsp;</p>
 
 ## Our Pledge
 

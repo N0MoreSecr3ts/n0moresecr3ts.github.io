@@ -1,13 +1,22 @@
 ---
 title: Code of Conduct
 keywords: wraith
-summary: "Code of Conduct"
 sidebar: wraith_sidebar
 permalink: wraith_coc.html
 folder: wraith
+toc: true
 ---
 
-# Code of Conduct
+<!-- <p align="center" >
+  <p>&nbsp;</p>
+  <a href="#our-pledge">Our Pledge</a> •
+  <a href="#scope">Scope</a> •
+  <a href="#enforcement">Enforcement</a> •
+  <a href="#attribution">Attribution</a> 
+  <p>&nbsp;</p>
+</p> -->
+
+<p>&nbsp;</p>
 
 ## Our Pledge
 
