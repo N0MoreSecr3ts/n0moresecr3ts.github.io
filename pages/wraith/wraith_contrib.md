@@ -7,19 +7,135 @@ permalink: wraith_contrib.html
 folder: wraith
 ---
 
-## Sample Content
+# Contributing
 
-"Lorem Ipsum" is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+<p align="center">
+  <a href="#ground-rules">Ground Rules</a> •
+  <a href="#first-contributions">First Contributions</a> •
+  <a href="#getting-started">Getting Started</a> •
+  <a href="#bug-reports">Bug Reports</a> •
+  <a href="#feature-suggestions">Feature Suggestions</a> •
+  <a href="#code-review-process">Code Review Process</a> •
+  <a href="#community">Community</a> •
+</p>
 
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+Pull requests are welcome from everyone.
+
+Keep an open mind! Improving documentation, bug triaging, or writing blog posts are all examples of helpful contributions that mean less work for the maintainers.
+
+All new functionality should have an issue openned prior to submitting a pull request. This will speed up to merging ofyour pull request by a significant amount. Being able to discuss it ahead of time, provide feedback on the code, and any additional details that could help you in the long run.
+
+This guide for contributions will make things much easier for everyone involved. You will know what is need to get and issue triaged or a pull requested merged with as little as possible.
+
+The maintainers will be able to review and merge code faster due to all tests are passing and the proper formating and style have already been implemented
+
+Bug fixes and simple non-functional change such as fixing typo's does not need an issue openned prior to making a pull request.
 
 
-## More sample content
+# Ground Rules
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+The issue tracker is the preferred channel for bug reports, features requests and submitting pull requests, but please respect the following restrictions:
 
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+Please do not derail or troll issues. Keep the discussion on topic and respect the opinions of others.
 
-There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+This includes not just how to communicate with others (being respectful, considerate, etc) but also technical responsibilities (importance of testing, project dependencies, etc). Deatils can be found in the [Code of Conduct](wraith_coc.html).
+
+
+## Responsibilities
+* Ensure cross-platform compatibility for every change that's accepted. 
+    * OSX
+    * Windows
+    * Linux
+        * CentOS
+        * Debian
+        * Ubuntu
+        * Arch
+* Ensure that code that goes into core meets all requirements [here](https://github.com/golang/go/wiki/CodeReviewComments)
+* Create issues for any major changes and enhancements that you wish to make. Discuss things transparently and get community feedback.
+* Keep feature versions as small as possible, preferably one new feature per version.
+* Be welcoming to newcomers and encourage diverse new contributors from all backgrounds.
+
+# First Contributions
+
+Unsure where to begin contributing to Wraith? You can start by looking through issues labeled with [Beginner](https://github.com/N0MoreSecr3ts/wraith/issues?q=is%3Aopen+is%3Aissue+label%3ABeginner) or [Hacktoberfest](https://github.com/N0MoreSecr3ts/wraith/labels/Hacktoberfest):
+
+**Beginner** - Issues which should only require a few lines of code, and a test or two.
+
+**Hacktoberfest** - issues which are more broad and good for new developers or those that want to contribute in other ways
+
+ [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
+
+
+# Getting started
+
+## General Guidelines
+* All merge conflicts must be resolved before the pr can be reviewed
+* The changelog must be updated following these [conventions](https://keepachangelog.com/en/1.0.0/). Your entrys should go in the unreleased section.
+* Commit messages should follow these [guidelines](https://chris.beams.io/posts/git-commit/)
+* This project follows [git flow](https://guides.github.com/introduction/flow/index.html)
+* When you submit code changes, your submissions are understood to be under the same [MIT License](https://choosealicense.com/licenses/mit/) that covers the project. Feel free to contact the maintainers if that's a concern.
+* We follow [SemVer 2.0](https://semver.org)The versioning scheme we use is SemVer.
+
+## New Features, larger fixes, contributions
+For larger changes such as new features this is the fastest way to get it merged:
+
+1. Open an issue to describe your proposed improvement or feature
+1. Ensure you have a proper Golang development environment
+1. Fork the repo and create your branch from **develop**
+1. Create your feature branch (`git checkout -b my-new-feature`)
+1. Add a new changelog entry folling the guidelines listed in [General Guidelines](general-guidelines) describing your change
+1. If you've added code that should be tested, add tests
+1. Update any documentation
+4. Ensure the test suite passes
+1. Push your feature branch (`git push origin my-new-feature`)
+1. Create a Pull Request as appropriate based on the issue discussion
+    * Please add **WIP** to the pull request title if it is not ready to be merged. This will allow us to prioritize code reviews.
+1. Respond to any comments by the maintainers within two weeks
+
+## Simple bug fixes, typo's and documentation
+These are changes with only a line or two, fixing a spelling issue or non-functional changes such as adding tests, logging, debuging information. Documentation updates or expansions, including godoc strings also qualify.
+
+1. Ensure you have a proper Golang development environment
+1. Fork the repo and create your branch from `develop`
+1. Create your feature branch (`git checkout -b my-new-feature`)
+1. Add a new changelog entry folling the guidelines listed in [General Guidelines](general-guidelines) describing your change
+1. If you've added code that should be tested, add tests
+1. Update any documentation
+4. Ensure the test suite passes
+1. Push your feature branch (`git push origin my-new-feature`)
+1. Create a Pull Request as appropriate based on the issue discussion
+    * Please add **WIP** to the pull request title if it is not ready to be merged. This will allow us to prioritize code reviews.
+1. Respond to any comments by the maintainers within two weeks
+
+# Bug Reports
+If you find a security issue please do not open a public issue, guideline for this can be found in the *security.txt* within the repository.
+
+When filing an issue, please make sure to answer these five questions and fill in any other details. The more details, screenshots, configuration infomation you can provide, the faster we can eact to the bug:
+
+1. What version of Wraith are you using?
+1. Did you use a pre-compiled release ot did you build it yourself?
+1. What operating system and processor architecture are you using?
+1. What did you do?
+    * Detailed steps to reproduce the bug
+    * Sample code or screenshots
+1. What did you expect to see?
+1. What did you see instead?
+1. Have you tried anything to fix the issue yourself or do you know what may be the cause.
+
+# Feature Suggestions
+There is currently a running roadmap in the docs directory of the repo. These are sorted by non-specific milestones with no dur date. If you would like to pick something out of this list please open an issue or pull request with **[WIP]** in the title.
+
+This information will give contributors context before they make suggestions that may not align with the project’s needs.
+
+If you find yourself wishing for or needing a feature that doesn't exist for an engagement, you are probably not alone. Many of the features, indeed this entire project, were born from a need to scan something. Open an [issue](https://github.com/N0MoreSecr3ts/wraith/issues) on GitHub which describes the feature you would like to see, why you need it, and how it should work.
+
+# Code review process
+After a pull request has been submit, or the **WIP** tage has been removed from the title it will be reviewd within two weeks. This is an open source project and everyone has day jobs and other commitments. It will most likely happen before then, but it will happen by then.
+
+When looking at a pull request, it will be given a code review for obvious security or functional issues, style concerns, or other issues that may present themselves further down the line.
+
+# Community
+For updated release information and bug information please follow the project on [twitter](https://twitter.com/N0MoreSecr3ts).
+
 
 {% include links.html %}

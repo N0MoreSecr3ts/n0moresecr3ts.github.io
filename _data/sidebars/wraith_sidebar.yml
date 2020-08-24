@@ -23,18 +23,22 @@ entries:
       url: /wraith_usage.html
       output: web #, pdf
 
-  - title: FAQ
+  - title: General
     output: web #, pdf
     folderitems:
+
+    - title: Configuration
+      url: /wraith_config.html
+      output: web #, pdf
   
     - title: FAQ
       url: /wraith_faq.html
       output: web #, pdf
 
-  - title: Contributing
-    output: web #, pdf
-    folderitems:
-
     - title: Contributing
       url: /wraith_contrib.html
+      output: web #, pdf
+
+    - title: Code Of Conduct
+      url: /wraith_coc.html
       output: web #, pdf
