@@ -6,7 +6,7 @@ topnav:
     - title: GitHub
       external_url: https://github.com/N0MoreSecr3ts
     - title: Medium
-      url: https://medium.com/\@caffeinatedEngineering
+      external_url: https://medium.com/\@caffeinatedEngineering
 
 #Topnav dropdowns
 topnav_dropdowns:
